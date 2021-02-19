@@ -9,7 +9,7 @@
   <link 
   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" 
   rel="stylesheet">
-  <script src="js/index.js"></script>
+
   <title>Discover Project</title>
 </head>
 
@@ -27,21 +27,21 @@
           <span>Entradas</span>
           <img src="./assets/income.svg" alt="Imagem de Entradas">
         </h3>
-        <p id="incomeDisplay">R$ 5.000,00</p>
+        <p id="incomeDisplay">R$ 0,00</p>
       </div>
       <div class="card">
         <h3>
           <span>Saídas</span>
           <img src="./assets/expense.svg" alt="Imagem de Saídas">
         </h3>
-        <p id="expenseDisplay">R$ 2.000,00</p>
+        <p id="expenseDisplay">R$ 0,00</p>
       </div>
       <div class="card total">
         <h3>
           <span>Total</span>
           <img src="./assets/total.svg" alt="Imagem de Total">
         </h3>
-        <p id="totalDisplay">R$ 3.000,00</p>
+        <p id="totalDisplay">R$ 0,00</p>
       </div>
     </section>
 
@@ -71,7 +71,7 @@
     <div class="modal">
       <div id="form">
         <h2>Nova Transação</h2>
-        <form action="">
+        <form action="" onsubmit="Form.submit(event)">
           <div class="input-group">
             <label 
               for="description" 
@@ -141,6 +141,8 @@
     <script>document.write(new Date().getFullYear())</script> - 
     dev.finance$
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
